@@ -24,5 +24,9 @@ def float_to_int(x):
 
 def fizzbuzz(n):
     """
-    Write a function that will return 1 of 4 values: if n is a multiple of 3 return 'fizz', a multiple of 5 'buzz', both 'fizzbuzz', neither n
+    Write a function that will return 1 of 4 values: 
+    if n is a multiple of 3 return 'fizz', 
+    if a multiple of 5 return 'buzz', 
+    if both return 'fizzbuzz', 
+    if neither return n
     """
