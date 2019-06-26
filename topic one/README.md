@@ -74,7 +74,7 @@ Operators are the symbols that denote what operation should be done to it's acco
   1.5
   >>> 3 // 2
   1
-  >>> 3 // 2 + 1 #Please note that to do ceiling division, you just add one onto the floor divided result
+  >>> 3 // 2 + 1 #Please note that to do ceiling division, you just add one onto the result of floor division
   2
   >>> 3 ** 2
   9
