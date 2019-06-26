@@ -59,6 +59,7 @@ Operators are the symbols that denote what operation should be done to it's acco
  * `//` for integer division (AKA floor division/rounding down to the closest lowest whole number)
  * `**` for exponentiation
  * `%` for modular arithmetic (AKA modulus/modulo/mod)  
+    
   You might have noticed that the first 4 are pretty simple, and they are.  
     
   Here are some examples of these operations in use, feel free to play around with the python shell by writing some expressions yourself!
