@@ -49,15 +49,16 @@ surrounding them and that's okay. That's not what is important here, the skills 
   Here is an example of an Expression.  
   (52 + 7  * 4) - 11  
   You probably know exactly what an expression is now, just by looking at that, but indulge me for a moment, expressions are built up of **operands** and **operators**. Operands in this example being 52, 7, 4 and 11. 
-The operators in this case are +, * and -. What it equals isn't really important, but if you figure it out, good for you.  Operands can be anything that can represent a value, so if you have `x` that equals a number then that would be a valid operand.  
-Operators are well, the symbols that denote what operation should be done to it's accompanying operands. There are few of them, the ones I want to show you are:  
+The operators in this case are +, * and -. What it equals isn't really important, but if you figure it out, good for you.  
+  Operands can be anything that can represent a value, so if you have `x` that equals a number then that would be a valid operand.  
+Operators are the symbols that denote what operation should be done to it's accompanying operands. There are few of them, the ones I want to show you are:  
  * `+` for addition
  * `-` for subtraction
  * `*` for multiplication
  * `/` for division
  * `//` for integer division (AKA floor division/rounding down to the closest lowest whole number)
  * `**` for exponentiation
- * `%` for modular arithmetic (AKA modulus/modulo/mod)
+ * `%` for modular arithmetic (AKA modulus/modulo/mod)  
   You might have noticed that the first 4 are pretty simple, and they are.  
     
   Here are some examples of these operations in use, feel free to play around with the python shell by writing some expressions yourself!
@@ -81,9 +82,9 @@ Operators are well, the symbols that denote what operation should be done to it'
   ```
       
   If you need any help understanding integer division, exponentiation or modular arithmetic, then I would recommend checking out these links:  
-  [Floor and Ceiling division](https://www.youtube.com/watch?v=RxNs4SwP6lk)  
-  [Exponentiation](https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals#pre-algebra-exponents)  
-  [Modular arithmetic](https://www.khanacademy.org/computing/computer-science/cryptography#modarithmetic)  
+   * [Floor and Ceiling division](https://www.youtube.com/watch?v=RxNs4SwP6lk)  
+   * [Exponentiation](https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals#pre-algebra-exponents)  
+   * [Modular arithmetic](https://www.khanacademy.org/computing/computer-science/cryptography#modarithmetic)  
 ## Assignment
 
 ## Conditionals
