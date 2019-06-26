@@ -39,7 +39,7 @@
 ## The Python shell
   One of the advantages of Python being an interpreted language is that you can write code and get instant feedback. A way to do this is by using the python shell, to open it you can open the default python IDLE, or type "py" into cmd or powershell. (If this doesn't work try "python" or "python3", if you can't get it to work at all, make sure Python is in your PATH)  
     
-  A good way to get an understanding of how the interpreter works is to use the shell, think of every line in your code, is another line typed out into the shell. One by one.  
+  A good way to get an understanding of how the interpreter works is to use the shell, think of every line in your code as another line typed out into the shell. One by one.  
   For the first few topics, I will be using the python shell to demonstrate them.  
 
 ## Expressions
