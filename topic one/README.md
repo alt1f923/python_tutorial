@@ -205,7 +205,7 @@ else: # Because the statement before it was True, the code inside the else state
   do stuff
 ```
     
-  **From this point on I will be using "Script mode", meaning I'll have a Python file open and running that instead of typing line by line into the shell.**  
+  **From this point on I will be using "Script mode", meaning I'll have a Python file open and running that instead of typing line by line into the shell. Unless I'm not and I say so.**  
 
 ## Functions
 
@@ -265,6 +265,70 @@ def function(x, y):
 ```
 Note that I put a space after commas and between operators, this is covered by [PEP 8](https://www.Python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements), you don't have to do it, but I think it just looks nice.
 
+## Types
+Types are an important part of Python, but the language itself generally does most of the work for you. Types are classifications of values. Some examples that we have used and seen so far are:
+ * Integers (`int`), these are signed (negative or positive) whole numbers, think numbers like `3` and `-10`
+ * Floating point integers (`float`), are (negative or positive) numbers that have a decimal point, even if it's equal to a whole number, think numbers like `3.4`, `-10.1` and `4.0`
+ * Booleans (`bool`), `True` or `False`  
+    
+  When you want to check the type of a value, you can use the `type()` method. Like below:
+  ```python
+  >>>type(34)
+  <class 'int'>
+  ```
+    
+  The last type I want to introduce to you in this topic is the string (`str`). Think of a string as a sequence of 0 to a large number of characters ([the maximum amount of characters is dependant on your systems memory](https://stackoverflow.com/questions/1739913/what-is-the-max-length-of-a-python-string)).  
+### The String type
+You can use the same sort of operations to `str`s as you can to `int`s, as you can see to these examples in interactive mode:
+```python
+>>> s = "string"
+>>> s
+'string'
+>>> s + "s"
+>>> s
+'strings'
+>>>s * 2
+'stringstring'
+```
+You can't use every operation like `-` or `/` to `str`  
+    
+  Sometimes you will want to add an int to a string, but if you try to add an `int` or a `float` to a `str` with the `+` operator, you will get an error. How you can get around this is by converting the types of the `int`/`float` to `str` by using `str(int)`, you can also convert numbers that are in `str` form to `int`/`float`, but if it isn't a valid `int`/`float` then you will also get an error. Examples of converting types being:
+```python
+>>> str(34)
+'34'
+>>> str(3.4)
+'3.4'
+>>> str(True)
+'True'
+>>> int(3.4)
+3
+>>> int(True)
+1
+>>> int(False)
+0
+>>> float(1)
+1.0
+>>> int("34")
+34
+>>> float("1")
+1.0
+>>> float("3.4")
+3.4
+>>> bool("")
+False
+>>> bool(" ")
+True
+>>> 
+```
+Note that changing a `float` to an `int` will yield the same result as doing integer division and `True` and `False` have integer values equivalent to `1` and `0` respectively.  
+    
+  A very convienient way you can add values in different types without having to manually convert them to python strings is by using fstrings, they follow this notation: `f"{x} string {y}"`, there is an example below:
+```python
+>>> x = 3
+>>> y = 2.4
+>>> s = 'string'
+>>> f"you can insert ints {x}, floats {y} and {s}s into strs using fstrings without having to convert types"
+'you can insert ints 3, floats 2.4 and strings into strs using fstrings without having to convert types'
+```
 ## Objects and methods
 
-## Types
