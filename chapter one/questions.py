@@ -2,6 +2,7 @@
 def add(x, y):
     """
     Write a function that takes integers x and y and returns the value of their product (x + y)
+    Must work for floats and integers, both negative and postive
     """
 
 # Question two
@@ -10,6 +11,7 @@ def add_division(x, y, z):
     Write a function that takes integers x, y and z and returns the value of x + y over the value of z
     You MUST use the add() function for this question
     You can assume z will never be 0
+    Must work for floats and integers, both negative and postive
     """
 
 # Question three
@@ -53,6 +55,10 @@ def fizzbuzz(n):
 
 if __name__ == "__main__":
     # Some test cases for you, feel free to edit these!
+
+    # In the future topics I might not make these, but to give you an idea of what is a good idea to do when learning Python
+    # and trying to answer these questions, I wrote these up for you.
+
     # A lot of editors (including the default IDLE) have ways to mass comment out lines of code that you have highlighted, 
     # Be sure to comment out functions you haven't finished yet, otherwise you'll get syntax errors
 

@@ -1,6 +1,6 @@
-**Topic one**
+**Chapter one**
 =============
-**This topic covers:**
+**This chapter covers:**
  * Getting started
  * What is Python
  * The Python shell
@@ -66,7 +66,7 @@ Operators are the symbols that denote what operation should be done to it's acco
   You might have noticed that the first 4 are pretty simple, and they are.  
     
   Here are some examples of these operations in use, feel free to play around with the Python shell by writing some expressions yourself!
-  ```Python
+  ```python
   >>> 3 + 2
   5
   >>> 3 - 2
@@ -94,7 +94,7 @@ Operators are the symbols that denote what operation should be done to it's acco
 Now this is all well and good, but what if you want to use the result of your expression for later?  
 You can assign it to a variable like so: `x = 3 + 2`, this will create an `int` called `x` that is equal to `5`.
 You could then use `x` later on, or change it like so:
-```Python
+```python
 >>>x = 3 + 2
 >>>x
 5
@@ -106,11 +106,11 @@ You could then use `x` later on, or change it like so:
 6
 ```  
 As you may have noticed, I did 
-```Python
+```python
 x *= 2
 ```
 this is shorthand for 
-```Python
+```python
 x = x * 2
 ```
 it does the same thing and you can use this for **any** operator.  
@@ -129,12 +129,12 @@ it does the same thing and you can use this for **any** operator.
 ## Conditionals
 What if we wanted to do different things to `x` based on what `x` is?  
   Well, we can, we can use an `if` statement. Usage in Python looks like this:
-```Python
+```python
 if condition:
   do stuff
 ```
 `condition` in this case is a conditional, some examples being:
-```Python
+```python
 >>>x = 0
 >>>x
 0
@@ -148,33 +148,33 @@ True
 False
 ```
 As you can see, these conditionals return `True` or `False`, this is because they are booleans. Equivalents to these will also work as conditions. If `x` is `1` then `x` will be equivalent to `True` meaning instead of having to write
-```Python
+```python
 if x == 1:
 ```
 you can write
-```Python
+```python
 if x: # this is shorthand for if x is True
 ```
 The opposite goes for `False`
-```Python
+```python
 if x == 0:
 ```
 to get this, we have to **negate** (invert) the previous statement, we do this by using `not`
-```Python
+```python
 if not x:
 ```
 if you want to have multiple conditions where they both have to be `True` you can do this
-```Python
+```python
 if condition1 and condition2:
   do stuff
 ```
 if you want to have multiple conditions where only one has to be `True` you can do this
-```Python
+```python
 if condition1 or condition2:
   do stuff
 ```
 it's very important that you make sure that your conditional is written correctly, sometimes you will need to use parenthesis
-```Python
+```python
 >>> False and True or True # False and True have to be the same so they're False, making the statement False or True, so this is True
 True
 >>> False and (True or True) # False and (True or True) becomes False and True, which is False
@@ -194,7 +194,7 @@ don't forget, even these `or` and `and` statements are conditionals.
  * `else` statements, these do not have any conditions, but you can use them to catch if your `if`s and `elif`s turn up `False`  
        
   Let's see some examples of them:
-```Python
+```python
 if False: # Because this conditional is False, the code inside it will not run, instead it will check the next part of the if statement, the elif statement
   do stuff 
 elif False: # This conditional is also False, so the program will move onto the next statement
@@ -213,7 +213,7 @@ else: # Because the statement before it was True, the code inside the else state
     
   
     
-  Ok so we're nearly there, the end of topic one, but this is one of the most important parts of this topic: Functions.  
+  Ok so we're nearly there, the end of chapter one, but this is one of the most important parts of this chapter: Functions.  
   What are functions? What if you could do the same piece of code to different variables, **without** having to write the code multiple times? That's what a function is, it allows you to set special variables only it can use inside itself, where you can give it instructions on what you want it to do with it, you can have it `return` values back or just do an action.  
     
   **Functions follow the same naming convention as variables (lowercase with words seperated by underscores)**  
@@ -221,14 +221,14 @@ else: # Because the statement before it was True, the code inside the else state
   To define a functionm, we use the `def` keyword followed by what we want to name the function, ending the line with parenthesis with what variables we want to use inside inside them. With a colon as the last character.  
     
   Let's look at an example:
-```Python
+```python
 def function(x, y):
   z = x + y
   z =* y
   return z
 ```
 This will return the product of `y(x + y)`, if `x` was `2` and `y` was `3` then `function(3, 2)` would return `z` which would be equal to `10`. You might be wondering why I don't write this instead:
-```Python
+```python
 def function(x, y):
   x += y
   x *= y
@@ -236,13 +236,29 @@ def function(x, y):
 ```
 it will do the same thing, however, this is bad practice, as in the future some different types of variables can be edited from inside a function this way.  
   You can however compact this code down to one line, and you should try to make sure your code takes up as least amount of lines as possible, just be sure to keep it readable, [PEP 8](https://www.Python.org/dev/peps/pep-0008/#maximum-line-length) recommends a maximum line length of 79 characters (72 for comments and docstrings, which I'll bring up soon), this is what lints and formatters will try to enforce, it's good habit to keep your code succint. like so:
-```Python
+```python
 def function(x, y):
   return (x + y) * y
 ```
 It ends up looking a little more complicated, but I'd recommend trying to do this where you can, just make sure you don't go overboard and create problems for yourself or others later down the line by making it hard to understand. Try to find a good balance.  
     
   Returning is all well and good, but it's useless if we're not returning into something. So when we call the function, instead of just writing `function(2, 3)` we can write `z = function(2, 3)`, this way we can use the value that is returned later, as a variable.  
+    
+  You can also call functions from inside themselves and other functions. Examples being:
+  ```python
+  def function1():
+    function1() # This will go on forever, in theory. This is called recursion and it is a very powerful tool
+
+  def function2():
+    function1()
+
+  def function3():
+    def function4():
+      pass
+  
+  def function5():
+    function4() # You cannot do this, as function4 was defined inside function 3 and can only be used inside it
+```  
     
   Functions don't have to return something, they can just print something instead of returning it, or they can save something to a file, it's up to you. Remember: Python can do anything.  
     
@@ -258,7 +274,7 @@ Since I've brought up [PEP](https://www.Python.org/dev/peps) a couple times, I s
   This is just for one line docstrings, which for this level will be more than enough.  
     
   A function with a docstring using our previous example would look like:
-```Python
+```python
 def function(x, y):
   """Multiply the product of x + y by y and return the result"""
   return (x + y) * y
@@ -266,6 +282,7 @@ def function(x, y):
 Note that I put a space after commas and between operators, this is covered by [PEP 8](https://www.Python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements), you don't have to do it, but I think it just looks nice.
 
 ## Types
+### Types we know so far
 Types are an important part of Python, but the language itself generally does most of the work for you. Types are classifications of values. Some examples that we have used and seen so far are:
  * Integers (`int`), these are signed (negative or positive) whole numbers, think numbers like `3` and `-10`
  * Floating point integers (`float`), are (negative or positive) numbers that have a decimal point, even if it's equal to a whole number, think numbers like `3.4`, `-10.1` and `4.0`
@@ -277,9 +294,9 @@ Types are an important part of Python, but the language itself generally does mo
   <class 'int'>
   ```
     
-  The last type I want to introduce to you in this topic is the string (`str`). Think of a string as a sequence of 0 to a large number of characters ([the maximum amount of characters is dependant on your systems memory](https://stackoverflow.com/questions/1739913/what-is-the-max-length-of-a-python-string)).  
+  The last type I want to introduce to you in this chapter is the string (`str`). Think of a string as a sequence of 0 to a large number of characters ([the maximum amount of characters is dependant on your systems memory](https://stackoverflow.com/questions/1739913/what-is-the-max-length-of-a-Python-string)).  
 ### The String type
-You can use the same sort of operations to `str`s as you can to `int`s, as you can see to these examples in interactive mode:
+You can use the same sort of operations to `str` as you can to `int`, as you can see to these examples in interactive mode:
 ```python
 >>> s = "string"
 >>> s
@@ -322,13 +339,39 @@ True
 ```
 Note that changing a `float` to an `int` will yield the same result as doing integer division and `True` and `False` have integer values equivalent to `1` and `0` respectively.  
     
-  A very convienient way you can add values in different types without having to manually convert them to python strings is by using fstrings, they follow this notation: `f"{x} string {y}"`, there is an example below:
+  A very convienient way you can add values in different types without having to manually convert them to Python strings is by using fstrings, they follow this notation: `f"{x} string {y}"`, there is an example below:
 ```python
 >>> x = 3
 >>> y = 2.4
->>> s = 'string'
->>> f"you can insert ints {x}, floats {y} and {s}s into strs using fstrings without having to convert types"
-'you can insert ints 3, floats 2.4 and strings into strs using fstrings without having to convert types'
+>>> s = 'word'
+>>> f"int: {x}, float: {y}, string: {s}"
+'int: 3, float: 2.4, string: word'
 ```
 ## Objects and methods
+**Everything** in Python is an **object**, `int` objects, `float` objects, `str` objects, function objects.  
+  But what are objects? Well, objects are like these bags of functions.  
+  Each `type`, `class` and `object` have functions that operate on them. These functions are called **methods**.  
+    
+  I will give some examples of methods for the `type` `str` in interactive mode:
+```python
+>>>"string".captialize() # Note that you can just use a string literal instead of a variable to use the method on
+'String'
+>>>"STRING".lower()
+'string'
+>>>"string".upper()
+'STRING'
+>>>"ringstringstring".strip("ring") # Note that it only removes the substring from the ends, and not from inside, this is especially useful for removing leading and trailing whitespace
+'stringst'
+>>>"string".split('i')
+['str', 'ng'] # This is a list type variable, don't worry, I'll be covering these in the next chapter!
+```
+To find all the methods for objects you can use:
+```python
+>>>help(object)
+```
+Or check it out on the [official Python documentation](https://docs.python.org/3/)
 
+## Congratulations!
+You did it!  
+     
+  You made it to the end of chapter one, which covers the basics of Python, probably around 2 weeks worth of university level content that they teached me here in Canterbury, but I skimmed a fair bit of stuff. Don't feel disparaged if you don't get it all after reading it though, you'll get it as you go along and this tutorial isn't going anywhere, so you can always have it or any other resource open alongside your editor as you go.  Use what you have as you study, and to the lovely dude who I wrote this for, you especiallly, **don't feel afraid to ask me questions** :).
