@@ -205,17 +205,65 @@ else: # Because the statement before it was True, the code inside the else state
   do stuff
 ```
     
-  **From this point on I will be using "Script mode", meaning I'll have a Python file open and running that instead of typing out line by line into the shell.**
+  **From this point on I will be using "Script mode", meaning I'll have a Python file open and running that instead of typing line by line into the shell.**  
 
 ## Functions
-Ok so we're nearly there, the end of topic one, but this is one of the most important parts of this topic; Functions.  
+
+### Defining and returning
+    
+  
+    
+  Ok so we're nearly there, the end of topic one, but this is one of the most important parts of this topic: Functions.  
   What are functions? What if you could do the same piece of code to different variables, **without** having to write the code multiple times? That's what a function is, it allows you to set special variables only it can use inside itself, where you can give it instructions on what you want it to do with it, you can have it `return` values back or just do an action.  
     
-  Let's look at an example
-  ```python
-  def function(x, y):
-    z = x + ypi
-
+  **Functions follow the same naming convention as variables (lowercase with words seperated by underscores)**  
+    
+  To define a functionm, we use the `def` keyword followed by what we want to name the function, ending the line with parenthesis with what variables we want to use inside inside them. With a colon as the last character.  
+    
+  Let's look at an example:
+```Python
+def function(x, y):
+  z = x + y
+  z =* y
+  return z
+```
+This will return the product of `y(x + y)`, if `x` was `2` and `y` was `3` then `function(3, 2)` would return `z` which would be equal to `10`. You might be wondering why I don't write this instead:
+```Python
+def function(x, y):
+  x += y
+  x *= y
+  return x
+```
+it will do the same thing, however, this is bad practice, as in the future some different types of variables can be edited from inside a function this way.  
+  You can however compact this code down to one line, and you should try to make sure your code takes up as least amount of lines as possible, just be sure to keep it readable, [PEP 8](https://www.Python.org/dev/peps/pep-0008/#maximum-line-length) recommends a maximum line length of 79 characters (72 for comments and docstrings, which I'll bring up soon), this is what lints and formatters will try to enforce, it's good habit to keep your code succint. like so:
+```Python
+def function(x, y):
+  return (x + y) * y
+```
+It ends up looking a little more complicated, but I'd recommend trying to do this where you can, just make sure you don't go overboard and create problems for yourself or others later down the line by making it hard to understand. Try to find a good balance.  
+    
+  Returning is all well and good, but it's useless if we're not returning into something. So when we call the function, instead of just writing `function(2, 3)` we can write `z = function(2, 3)`, this way we can use the value that is returned later, as a variable.  
+    
+  Functions don't have to return something, they can just print something instead of returning it, or they can save something to a file, it's up to you. Remember: Python can do anything.  
+    
+### Docstrings and formatting
+Since I've brought up [PEP](https://www.Python.org/dev/peps) a couple times, I should probably talk about it in a little more depth, it's the official standard for how you should do things in Python, you code will work regardless of whether you follow it, but if you ever want to work collaboratory with other Python programmers, these rules are built upon the most common practices of the programmers out there, however if you want to use tabs over spaces, not include docstrings or go over the recommended line character limit, that's totally within your rights.  
+  But someone, somewhere will judge you for it, especially if you use different indentation to them.  
+  People really hate that.  
+    
+  Docstrings are covered by [PEP 257](https://www.Python.org/dev/peps/pep-0257/#one-line-docstrings), but to summarise it:
+   * Describe what your function is supposed to do, on the line after your function definition, in the form of "Do X and return Y"
+   * Use triple quotes (""")  
+    
+  This is just for one line docstrings, which for this level will be more than enough.  
+    
+  A function with a docstring using our previous example would look like:
+```Python
+def function(x, y):
+  """Multiply the product of x + y by y and return the result"""
+  return (x + y) * y
+```
+Note that I put a space after commas and between operators, this is covered by [PEP 8](https://www.Python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements), you don't have to do it, but I think it just looks nice.
 
 ## Objects and methods
 
