@@ -4,6 +4,7 @@ def add(x, y):
     Write a function that takes integers x and y and returns the value of their product (x + y)
     Must work for floats and integers, both negative and postive
     """
+    return None
 
 # Question two
 def add_division(x, y, z):
@@ -13,57 +14,45 @@ def add_division(x, y, z):
     You can assume z will never be 0
     Must work for floats and integers, both negative and postive
     """
+    return None
 
-# Question three
-def fstring(s1, s2, x, y):
-    """
-    Write a function that takes strings s1 and s2 and integers x and y and returns a string containing them in the same format as:
-    s2 + ' ' + s1 + str(add(x, y))
-    You must use a fstring for this question 
-    """
-
-# Question four
-def string_case_concatenation(s1):
-    """
-    Write a function that takes the string s1 and returns the value of s1 + the value of s1 in lowercase + the value of s1 in uppercase
-    s1 itself must not be edited
-    """
-
-# Question five
-def word_square(s1):
-    """
-    Write a function that takes a string s1 and returns the square of it as an integer
-    You can assume s1 will always be a valid int e.g. s1 = '32'
-    """
-
-# Question six
+    # Question three
 def float_to_int(x):
     """
     Write a function that takes an float x and returns an integer that is the lowest whole number. e.g. 4.99999 -> 4
-    There is more than one way to do this, use whatever one you are most comfortable with
+    You must use integer division for this question
     """
+    return None
 
-# Question seven
-def fizzbuzz(n):
+# Question four
+def mod(x, y):
     """
-    Write a function that will return 1 of 4 values: 
-    if n is a multiple of 3 return 'fizz', 
-    if a multiple of 5 return 'buzz', 
-    if both return 'fizzbuzz', 
-    if neither return n
+    Write a function that performs the modulus operation via recursion and returns it, if you're having some problems with it this video might help: https://www.youtube.com/watch?v=Mv9NEXX1VHc
+    You can NOT use the modulo operator for this question
     """
+    return None
 
-if __name__ == "__main__":
+# Question five
+def piecewise(n):
+    """
+    Write a function that will follow these conditions:
+    if n is less than 3 then return negative n minus 4
+    if n is either 3, 10 or between them then return n squared minus 7
+    if n is greater than 10 then return 5 plus the result of 120 over n 
+    """
+    return None
+
+if __name__ == "__main__": # __name__ == "__main__" will return True when THIS file is run
     # Some test cases for you, feel free to edit these!
 
-    # In the future topics I might not make these, but to give you an idea of what is a good idea to do when learning Python
+    # In the future chapters I might not make these tests for you, but to give you an idea of what is a good idea to do when learning Python
     # and trying to answer these questions, I wrote these up for you.
 
     # A lot of editors (including the default IDLE) have ways to mass comment out lines of code that you have highlighted, 
     # Be sure to comment out functions you haven't finished yet, otherwise you'll get syntax errors
 
     # Question one
-    x, y = 2, 4 # Don't be intimidated if you're confused by this line, I'll explain it in the next topic :)
+    x, y = 2, 4 # Don't be intimidated if you're confused by this line, I'll explain it in the next chapter :)
     print(f'{add(x, y)} {add(x, y) == 6}')  # The first value is what the function outputs and the second is a boolean
                                             # of whether it has returned the correct answer in the case of 2 + 4
 
@@ -72,28 +61,17 @@ if __name__ == "__main__":
     print(f'{add_division(x, y, z)} {add_division(x, y, z) == 1}')
 
     # Question three
-    s1, s2, x, y = 'a', 'b', 2, 4
-    print(f'{fstring(s1, s2, x, y)} {fstring(s1, s2, x, y) == "b a6"}')
-    
-    # Question four
-    s1 = 'aB'
-    print(f'{string_case_concatenation(s1)} {string_case_concatenation(s1) == "aBabAB"}')
-
-    # Question five
-    s1 = '3'
-    print(f'{word_square(s1)} {word_square(s1) == 9}')
-
-    # Question six
     x = 4.999999
     print(f'{float_to_int(x)} {float_to_int(x) == 4}')
-
-    # Question seven
-    n = 15
-    print(f'{fizzbuzz(n)} {fizzbuzz(n) == "fizzbuzz"}')
-    n = 3
-    print(f'{fizzbuzz(n)} {fizzbuzz(n) == "fizz"}')
-    n = 5
-    print(f'{fizzbuzz(n)} {fizzbuzz(n) == "buzz"}')
-    n = 1
-    print(f'{fizzbuzz(n)} {fizzbuzz(n) == 1}')
     
+    # Question four
+    x, y = 10, 55
+    print(f'{mod(x, y)} {mod(x, y) == 10}')
+
+    # Question five
+    n = '2'
+    print(f'{piecewise(n)} {piecewise(n) == -6}')
+    n = '3'
+    print(f'{piecewise(n)} {piecewise(n) == 2}')
+    n = '12'
+    print(f'{piecewise(n)} {piecewise(n) == 15}') # Note that 15.0 == 15 will be True

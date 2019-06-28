@@ -15,9 +15,16 @@ A helpful (I hope) series of chapters designed to teach the reader Python.
  * Assignment and variables
  * Conditionals
  * Functions
- * Objects and methods
- * Types  
     
- **Chapter two**
+ **Chapter two** NOT READY
 =============
- * Not ready, but something along the lines of lists, sets, tuples, dicts, iteration, an explaination about literals, maybe some hashing (to explain dicts) and default values and *args + **kwargs for functions
+ * Objects and methods
+ * Types 
+ * A brief explaination of literals
+ * Tuples
+ * Lists
+ * Sets
+ * Dictionaries
+ * Iteration
+ * Functions continued
+
