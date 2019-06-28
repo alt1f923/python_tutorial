@@ -308,7 +308,7 @@ def function(x, y):
   """Multiply the product of x + y by y and return the result"""
   return (x + y) * y
 ```
-Note that I put a space after commas and between operators, this is covered by [PEP 8](https://www.Python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements), you don't have to do it, but I think it just looks nice.
+Note that I put a space after commas and around operators, this is covered by [PEP 8](https://www.Python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements), you don't have to do it, but I think it just looks nice.
 
 ## Types
 ### Types we know so far
