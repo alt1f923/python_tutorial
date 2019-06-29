@@ -18,13 +18,13 @@ A helpful (I hope) series of chapters designed to teach the reader Python.
     
  **Chapter two** NOT READY
 =============
+ * Functions continued
  * Objects and methods
  * Types 
  * A brief explaination of literals
- * Tuples
- * Lists
- * Sets
+ * Tuples, Lists and Sets
  * Dictionaries
- * Iteration
- * Functions continued
 
+ **Chapter three** NOT READY
+=============
+ * Iteration
