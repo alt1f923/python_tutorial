@@ -19,8 +19,8 @@ A helpful (I hope) series of chapters designed to teach the reader Python.
  **Chapter two** NOT READY
 =============
  * Functions continued
- * Objects and methods
  * Types 
+ * Objects and Methods
  * A brief explaination of Literals
  * A brief explaination of Mutability
  * Tuples, Lists and Sets
