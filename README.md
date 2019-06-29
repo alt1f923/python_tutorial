@@ -21,8 +21,8 @@ A helpful (I hope) series of chapters designed to teach the reader Python.
  * Functions continued
  * Objects and methods
  * Types 
- * A brief explaination of literals
- * A brief explaination of mutability
+ * A brief explaination of Literals
+ * A brief explaination of Mutability
  * Tuples, Lists and Sets
  * Indexing, Slicing and Aliasing
  * Dictionaries
