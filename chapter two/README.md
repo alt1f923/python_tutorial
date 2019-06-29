@@ -1,15 +1,14 @@
 **Chapter two**
 =============
 **This chapter covers:**
- * [Objects and methods](#Objects-and-methods)
- * [Types](#Types)
- * [A brief explaination of literals](#A-brief-explaination-of-literals)
- * [Tuples](#Tuples)
- * [Lists](#Lists)
- * [Sets](#Sets)
- * [Dictionaries](#Dictionaries)
- * [Iteration](#Iteration)
  * [Functions continued](#Functions-continued)
+ * [Types](#Types)
+ * [Objects and Methods](#Objects-and-Methods)
+ * [A brief explaination of Literals](#A-brief-explaination-of-Literals)
+ * [A brief explaination of Mutability](#A-brief-explaination-of-Mutability)
+ * [Tuples, Lists and Sets](Tuples,-Lists-and-Sets)
+ * [Indexing, Slicing and Aliasing](Indexing,-Slicing-and-Aliasings)
+ * [Dictionaries](Dictionaries)
 
 ## Types
 ### Types we know so far
@@ -87,7 +86,7 @@ Note that converting a `float` to an `int` will yield the same result as doing i
 >>> f"int: {x}, float: {y}, string: {s}"
 'int: 3, float: 2.4, string: word'
 ```
-## Objects and methods
+## Objects and Methods
 **Everything** in Python is an **object**, `int` objects, `float` objects, `str` objects, function objects.  
   But what are objects? Well, objects are like these bags of functions.  
   Each `type`, `class` and `object` have functions that operate on them. These functions are called **methods**.  
