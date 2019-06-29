@@ -31,4 +31,5 @@ A helpful (I hope) series of chapters designed to teach the reader Python.
 =============
  * Looping
  * Iteration
- * 
+ * Nesting
+ * File processing
