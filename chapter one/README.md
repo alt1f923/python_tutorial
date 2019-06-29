@@ -5,7 +5,7 @@
  * [What is Python](#What-is-Python)
  * [The Python shell](#The-Python-shell)
  * [Expressions](#Expressions)
- * [Assignment and variables](#Assignment-and-variables)
+ * [Assignment and Variables](#Assignment-and-Variables)
  * [Conditionals](#Conditionals)
  * [Functions](#Functions)
 
@@ -112,7 +112,7 @@ Operators are the symbols that denote what operation should be done to it's acco
    * [Exponentiation](https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals#pre-algebra-exponents)  
    * [Modular arithmetic](https://www.khanacademy.org/computing/computer-science/cryptography#modarithmetic)  
 
-## Assignment and variables
+## Assignment and Variables
 ### Introduction
 Now this is all well and good, but what if you want to use the result of your expression for later?  
 You can assign it to a variable like so: `x = 3 + 2`, this will create an `int` called `x` that is equal to `5`.
