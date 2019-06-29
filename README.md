@@ -12,7 +12,7 @@ A helpful (I hope) series of chapters designed to teach the reader Python.
  * What is Python
  * The Python shell
  * Expressions
- * Assignment and variables
+ * Assignment and Variables
  * Conditionals
  * Functions
     
