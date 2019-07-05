@@ -4,11 +4,13 @@
  * [Functions continued](#Functions-continued)
  * [Types](#Types)
  * [Objects and Methods](#Objects-and-Methods)
- * [A brief explaination of Literals](#A-brief-explaination-of-Literals)
- * [A brief explaination of Mutability](#A-brief-explaination-of-Mutability)
- * [Tuples, Lists and Sets](Tuples,-Lists-and-Sets)
- * [Indexing, Slicing and Aliasing](Indexing,-Slicing-and-Aliasings)
- * [Dictionaries](Dictionaries)
+ * [A brief explanation of Literals](#A-brief-explaination-of-Literals)
+ * [A brief explanation of Mutability](#A-brief-explaination-of-Mutability)
+ * [Tuples, Lists and Sets](#Tuples,-Lists-and-Sets)
+ * [Indexing, Slicing and Aliasing](#Indexing,-Slicing-and-Aliasings)
+ * [Dictionaries](#Dictionaries)
+## Functions continued
+In the previous chapter, I introduced you to functions, how to define them and return values with them.
 
 ## Types
 ### Types we know so far
@@ -17,25 +19,25 @@ Types are an important part of Python, but the language itself generally does mo
  * Floating point integers (`float`), are (negative or positive) numbers that have a decimal point, even if it's equal to a whole number, think numbers like `3.4`, `-10.1` and `4.0`
  * Booleans (`bool`), `True` or `False`  
     
-  When you want to check the type of a value, you can use the `type()` method. Like below:
+When you want to check the type of a value, you can use the `type()` method. Like below:
   ```python
   >>>type(34)
   <class 'int'>
   ```
-  If you want to get a string representation of an object, you can use the `repr()` method. Like below:
+If you want to get a string representation of an object, you can use the `repr()` method. Like below:
   ```python
   >>>repr(34)
   '34'
   ```
-  `repr()` returns a string of how to define the object as you gave it. You can use the `eval()` method to undo this by turning a `str` into Python code that is executed. Like below:
+`repr()` returns a string of how to define the object as you gave it. You can use the `eval()` method to undo this by turning a `str` into Python code that is executed. Like below:
   ```python
   >>>eval("3 + 2")
   5
   ```  
 ### The String type
 The last type I want to introduce to you in this chapter is the string (`str`). Think of a string as a sequence of 0 to a large number of characters ([the maximum amount of characters is dependant on your systems memory](https://stackoverflow.com/questions/1739913/what-is-the-max-length-of-a-Python-string)).  
-    
-  You can use the same sort of operations to `str` as you can to `int`, as you can see to these examples in interactive mode:
+
+You can use the same sort of operations to `str` as you can to `int`, as you can see to these examples in interactive mode:
 ```python
 >>> s = "string"
 >>> s
@@ -48,7 +50,7 @@ The last type I want to introduce to you in this chapter is the string (`str`). 
 ```
 You can't use every operation like `-` or `/` to `str`  
 ### Changing types
-  Sometimes you will want to add an int to a string, but if you try to add an `int` or a `float` to a `str` with the `+` operator, you will get an error. How you can get around this is by converting the types of the `int`/`float` to `str` by using `str(int)`, you can also convert numbers that are in `str` form to `int`/`float`, but if it isn't a valid `int`/`float` then you will also get an error. Examples of converting types being:
+Sometimes you will want to add an int to a string, but if you try to add an `int` or a `float` to a `str` with the `+` operator, you will get an error. How you can get around this is by converting the types of the `int`/`float` to `str` by using `str(int)`, you can also convert numbers that are in `str` form to `int`/`float`, but if it isn't a valid `int`/`float` then you will also get an error. Examples of converting types being:
 ```python
 >>> str(34)
 '34'
