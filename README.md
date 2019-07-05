@@ -25,11 +25,13 @@ A helpful (I hope) series of chapters designed to teach the reader Python.
  * A brief explaination of Mutability
  * Tuples, Lists and Sets
  * Indexing, Slicing and Aliasing
- * Dictionaries
+ * Error handling
 
  **Chapter three** NOT READY
 =============
+ * Dictionaries
  * Looping
  * Iteration
  * Nesting
  * File processing
+ * Classes
