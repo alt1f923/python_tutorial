@@ -10,7 +10,8 @@
  * [Indexing, Slicing and Aliasing](#Indexing,-Slicing-and-Aliasings)
  * [Dictionaries](#Dictionaries)
 ## Functions continued
-In the previous chapter, I introduced you to functions, how to define them and return values with them.
+In the previous chapter, I introduced you to functions, how to define them and return values with them. But there is more to functions than what I have showed you so far.   
+
 
 ## Types
 ### Types we know so far
