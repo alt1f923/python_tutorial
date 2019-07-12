@@ -301,7 +301,7 @@ Python unlike other languages enforces indentation, either a tab, 4 spaces or 2 
 #### Commenting
 As you have probably noticed, I have been putting comments into some of the coding examples behind a `#`. This is how you comment in Python, the space that I put after the `#` is optional, but is recommended by [PEP 8](https://www.python.org/dev/peps/pep-0008/#comments). Comments are handy when you want to explain what a complex line does, or for what you need to implement later. Use them in whatever way you see fit, they don't affect how the code is run. 
 
-#### Docstrings    
+#### Single line Docstrings    
   Docstrings are covered by [PEP 257](https://www.Python.org/dev/peps/pep-0257/#one-line-docstrings), but to summarise it:
    * Describe what your function is supposed to do, on the line after your function definition, in the form of "Do X and return Y"
    * Use triple quotes (""")  

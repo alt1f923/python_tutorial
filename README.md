@@ -19,16 +19,16 @@ A helpful (I hope) series of chapters designed to teach the reader Python.
  **Chapter two** NOT READY
 =============
  * Functions continued
- * Types 
+ * Types
  * Objects and Methods
- * A brief explaination of Literals
- * A brief explaination of Mutability
- * Tuples, Lists and Sets
- * Indexing, Slicing and Aliasing
+ * Literals
+ * Mutability
  * Error handling
 
  **Chapter three** NOT READY
 =============
+ * Tuples, Lists and Sets
+ * Indexing, Slicing and Aliasing
  * Dictionaries
  * Looping
  * Iteration

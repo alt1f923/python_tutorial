@@ -4,13 +4,17 @@
  * [Functions continued](#Functions-continued)
  * [Types](#Types)
  * [Objects and Methods](#Objects-and-Methods)
- * [A brief explanation of Literals](#A-brief-explaination-of-Literals)
- * [A brief explanation of Mutability](#A-brief-explaination-of-Mutability)
- * [Tuples, Lists and Sets](#Tuples,-Lists-and-Sets)
- * [Indexing, Slicing and Aliasing](#Indexing,-Slicing-and-Aliasings)
- * [Dictionaries](#Dictionaries)
+ * [Literals](#Literals)
+ * [Mutability](#Mutability)
+ * [Error handling](#Error-handling)
 ## Functions continued
 In the previous chapter, I introduced you to functions, how to define them and return values with them. But there is more to functions than what I have showed you so far.   
+### Multiline docstrings
+### Decorators
+### Default Values
+###  *Args and **Kwargs
+### Static analysis
+### Type hinting
 
 
 ## Types
