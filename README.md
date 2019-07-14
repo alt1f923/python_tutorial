@@ -17,9 +17,9 @@ Hello, this is my Python guide, a helpful (I hope) series of chapters designed t
     
  **Chapter two** NOT READY
 =============
- * Functions continued
  * Types
  * Objects and Methods
+ * Functions continued
  * Literals
  * Mutability
  * Error handling
