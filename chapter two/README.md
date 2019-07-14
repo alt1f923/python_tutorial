@@ -1,22 +1,13 @@
 **Chapter two**
 =============
 **This chapter covers:**
- * [Functions continued](#Functions-continued)
  * [Types](#Types)
  * [Objects and Methods](#Objects-and-Methods)
+ *  [Functions continued](#Functions-continued)
  * [Literals](#Literals)
  * [Mutability](#Mutability)
  * [Error handling](#Error-handling)
-## Functions continued
-In the previous chapter, I introduced you to functions, how to define them and return values with them. But there is more to functions than what I have showed you so far.   
-### Multiline docstrings
-### Decorators
-### Default Values
-###  *Args and **Kwargs
-### Static analysis
-### Type hinting
-
-
+ * [Importing](#Importing)
 ## Types
 ### Types we know so far
 Types are an important part of Python, but the language itself generally does most of the work for you. Types are classifications of values. Some examples that we have used and seen so far are:
@@ -40,7 +31,7 @@ If you want to get a string representation of an object, you can use the `repr()
   5
   ```  
 ### The String type
-The last type I want to introduce to you in this chapter is the string (`str`). Think of a string as a sequence of 0 to a large number of characters ([the maximum amount of characters is dependant on your systems memory](https://stackoverflow.com/questions/1739913/what-is-the-max-length-of-a-Python-string)).  
+The type I want to introduce to you in this chapter is the string (`str`). Think of a string as a sequence of 0 to a large number of characters ([the maximum amount of characters is dependant on your systems memory](https://stackoverflow.com/questions/1739913/what-is-the-max-length-of-a-Python-string)).  
 
 You can use the same sort of operations to `str` as you can to `int`, as you can see to these examples in interactive mode:
 ```python
@@ -100,19 +91,54 @@ Note that converting a `float` to an `int` will yield the same result as doing i
     
   I will give some examples of methods for the `type` `str` in interactive mode:
 ```python
->>>"string".captialize() # Note that you can just use a string literal instead of a variable to use the method on
+>>>"string".captialize() # Note that you can just use a string literal instead of a variable to use the method on. (I'll cover literals later in this chapter.)
 'String'
 >>>"STRING".lower()
 'string'
 >>>"string".upper()
 'STRING'
->>>"ringstringstring".strip("ring") # Note that it only removes the substring from the ends, and not from inside, this is especially useful for removing leading and trailing whitespace
-'stringst'
+>>>"ringstringstring".strip("ring") 
+'stringst' # Note that it only removes the substring from the ends, and not from inside, this is especially useful for removing leading and trailing whitespace.
 >>>"string".split('i')
-['str', 'ng'] # This is a list type variable, don't worry, I'll be covering these later this chapter!
+['str', 'ng'] # This is a list type variable, don't worry, I'll be covering these in the next chapter!
 ```
 To find all the methods for objects you can use:
 ```python
 >>>help(object)
 ```
 Or check it out on the [official Python documentation](https://docs.python.org/3/)
+## Functions continued
+In the previous chapter, I introduced you to functions, how to define them and how return values with them. This will be a continuation of functions as a topic as there is more that you can do with them.
+### Multiline docstrings
+Previously I talked about single line docstrings, there is another type that explains the function of the program you are making in more detail. These as you can probably guess from the header, take up multiple lines.  
+They are also unsurprisingly more complex, which helps in providing more information to anyone reviewing the code that you are writing.  
+  
+Sections in function multiline docstrings are:  
+ * Args: A list of the parameters and their types that are used in the function.
+ * Returns/Yields: A description of what the function returns/yields.
+ * Raises: All exceptions that might be raised, so long as they're relevant.
+
+These are all covered in [PEP 257](https://www.python.org/dev/peps/pep-0257/#multi-line-docstrings) and by the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)  
+  
+A multiline docstring using the example from [single line docstrings](../chapter%20one/README.md#Single-line-Docstrings) could look like this:
+```python
+def function(x, y):
+  """Multiply the product of x + y by y and return the result.
+  
+  Args: 
+    x: An integer.
+    y: An integer.
+    
+  Returns:
+    The product of x + y multiplied by y.
+  """
+  return (x + y) * y
+  
+```
+Now, this example is pretty simple. If it is **obvious** what a function does or if it is **short** like the example above is. Then you don't have to include any docstring since it would be redundant.
+### Decorators
+### Default Values
+###  *Args and **Kwargs
+### Static analysis
+### Type hinting
+### Generators
