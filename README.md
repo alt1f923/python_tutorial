@@ -7,22 +7,22 @@ Hello, this is my Python guide, a helpful (I hope) series of chapters designed t
 **Chapter one**
 =============
 **This chapter covers:**
- * Getting started
- * What is Python
- * The Python shell
- * Expressions
- * Assignment and Variables
- * Conditionals
- * Functions
+ * [Getting started](./chapter%20one/README.md#Getting-started)
+ * [What is Python](./chapter%20one/README.md#What-is-Python)
+ * [The Python shell](./chapter%20one/README.md#The-Python-shell)
+ * [Expressions](./chapter%20one/README.md#Expressions)
+ * [Assignment and Variables](./chapter%20one/README.md#Assignment-and-Variables)
+ * [Conditionals](./chapter%20one/README.md#Conditionals)
+ * [Functions](./chapter%20one/README.md#Functions)
     
  **Chapter two** NOT READY
 =============
- * Types
- * Objects and Methods
- * Functions continued
- * Literals
- * Mutability
- * Error handling
+ * [Types](./chapter%20two/README.md#Types)
+ * [Objects and Methods](./chapter%20two/README.md#Objects-and-Methods)
+ * [Functions continued](./chapter%20two/README.md#Functions-continued)
+ * [Literals](./chapter%20two/README.md)
+ * [Mutability](./chapter%20two/README.md)
+ * [Error handling](./chapter%20two/README.md)
 
  **Chapter three** NOT READY
 =============
