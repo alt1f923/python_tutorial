@@ -51,7 +51,7 @@ If you have other people working on your code with you, or if you end up taking 
       
   That's what an interpreter does, a compiler on the other hand will convert the entire program to instructions that the computer can understand in one go. They both have their advantages, but generally compilers are faster than interpreters, but I wouldn't worry about that, Python is relevant and widely appreciated by programmers worldwide despite that.  
       
-  Continuing the explaination, to be high level as a programming language, the language is far less complex and thus easier for humans to understand, sacrificing performance and control in return for an easier programming experience.  
+  Continuing the explanation, to be high level as a programming language, the language is far less complex and thus easier for humans to understand, sacrificing performance and control in return for an easier programming experience.  
       
   Because the logic behind programs is generally the same despite this, you still have to think the same way when programming in a lower level language like rust or c++ as you do when you program in Python, but an advantage of it is you can implement your creative ideas quickly and easily.  
     
@@ -66,7 +66,7 @@ If you have other people working on your code with you, or if you end up taking 
 
 ## Expressions
 ### Introduction
-  The first concept I would like to introduce to you is **Expressions**. You should be familar with these if you've done any form of mathematics in your life, you might not be familar with the terminology surrounding them and that's okay. That's not what is important here, the skills are.  
+  The first concept I would like to introduce to you is **Expressions**. You should be familiar with these if you've done any form of mathematics in your life, you might not be familiar with the terminology surrounding them and that's okay. That's not what is important here, the skills are.  
     
   Here is an example of an Expression.  
   `(52 + 7  * 4) - 11`  
@@ -142,7 +142,7 @@ it does the same thing and you can use this for **any** operator.
   Now before you go and start naming variables willy-nilly. There are commonly accepted conventions for how you should name things, as I introduce new concepts I'll say what their naming convention is, but as for what we have covered so far by [PEP 8](https://www.Python.org/dev/peps/pep-0008/):
    * Variable names should be completely lowercase with words separated by an underscore
    * Globals (Variables that can be accessed from anywhere in the code and can be changed) should follow the same convention as variables
-   * Constants (Variables that you can access for later, and which shouldn't be changed e.g. `PI = 3.14`) should be completely uppercase with words seperated by an underscore  
+   * Constants (Variables that you can access for later, and which shouldn't be changed e.g. `PI = 3.14`) should be completely uppercase with words separated by an underscore  
       
   I wouldn't worry too much about globals or constants, as you probably won't be needing to use them for a while.  
        
@@ -239,9 +239,9 @@ else: # Because the statement before it was True, the code inside the else state
   Ok so we're nearly there, the end of chapter one, but this is one of the most important parts of this chapter: Functions.  
   What are functions? What if you could do the same piece of code to different variables, **without** having to write the code multiple times? That's what a function is, it allows you to set special variables only it can use inside itself, where you can give it instructions on what you want it to do with it, you can have it `return` values back or just do an action.  
     
-  **Functions follow the same naming convention as variables (lowercase with words seperated by underscores)**  
+  **Functions follow the same naming convention as variables (lowercase with words separated by underscores)**  
     
-  To define a function, we use the `def` keyword followed by what we want to name the function, ending the line with parenthesis with what variables we want to use inside inside them. With a colon as the last character.  
+  To define a function, we use the `def` keyword followed by what we want to name the function, ending the line with parenthesis with what variables we want to use inside them. With a colon as the last character.  
     
   Let's look at an example:
 ```python
@@ -259,7 +259,7 @@ def function(x, y):
   return x
 ```
 it will do the same thing, however, this is bad practice, as in the future some different types of variables can be edited from inside a function this way.  
-  You can however compact this code down to one line, and you should try to make sure your code takes up as least amount of lines as possible, just be sure to keep it readable, [PEP 8](https://www.Python.org/dev/peps/pep-0008/#maximum-line-length) recommends a maximum line length of 79 characters (72 for comments and docstrings, which I'll bring up soon), this is what lints and formatters will try to enforce, it's good habit to keep your code succint. like so:
+  You can however compact this code down to one line, and you should try to make sure your code takes up as least amount of lines as possible, just be sure to keep it readable, [PEP 8](https://www.Python.org/dev/peps/pep-0008/#maximum-line-length) recommends a maximum line length of 79 characters (72 for comments and docstrings, which I'll bring up soon), this is what lints and formatters will try to enforce, it's good habit to keep your code succinct. like so:
 ```python
 def function(x, y):
   return (x + y) * y
@@ -317,4 +317,4 @@ Note that I put a space after commas and around operators, this is covered by [P
 ## Congratulations!
 You did it!  
      
-  You made it to the end of chapter one, which covers some basics of Python, probably around 1-2 weeks worth of university level content that they teached me here in Canterbury, but I skimmed a fair bit of stuff. Don't feel disparaged if you don't get it all after reading it though, you'll get it as you go along and this tutorial isn't going anywhere, so you can always have it or any other resource open alongside your editor as you go.  Use what you have as you study, and to the lovely dude who I wrote this for, you especiallly, **don't feel afraid to ask me questions** :).
+  You made it to the end of chapter one, which covers some basics of Python, probably around 1-2 weeks worth of university level content that they taught me here in Canterbury, but I skimmed a fair bit of stuff. Don't feel disparaged if you don't get it all after reading it though, you'll get it as you go along and this tutorial isn't going anywhere, so you can always have it or any other resource open alongside your editor as you go.  Use what you have as you study, and to the lovely dude who I wrote this for, you especially, **don't feel afraid to ask me questions** :).
