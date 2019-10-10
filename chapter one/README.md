@@ -23,9 +23,7 @@ Make sure you have the latest version of the installer:
     
   I'm personally running version 3.7.3, but any version after 3.6 as far as I'm aware will work for what I'll be doing, but to be on the safe side, try to make sure you're on the latest version.  
     
-  When you go to install it make sure you check the box that adds Python to PATH. It's on one of the first slides at the bottom of the installer and is usually unchecked by default.  
-  ![Image of Python installer with "Add Python 3.7 to PATH" circled](../images/path.png)  
-      
+  When you go to install it make sure you check the box that adds Python to PATH. It's on one of the first slides at the bottom of the installer and is usually unchecked by default.   ![Image of Python installer with "Add Python 3.7 to PATH" circled](../docs/images/path.png)  
   This is important as it means you can run Python scripts, access the Python shell, and most importantly for later it'll mean you can use pip from the command prompt.  
 
 ### Other software to check out
