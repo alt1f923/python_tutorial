@@ -130,8 +130,6 @@ article iframe {
     min-width: 42.5vw;
     min-height: 24vw;
     padding: 2vh;
-    margin-left: 50%;
-    margin-right: 50%;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
