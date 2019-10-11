@@ -107,7 +107,7 @@ article ul {
     padding-left: 2vw;
 }
 
-article picture img, article iframe {
+article picture img{
     max-width: 85vw;
     padding: 2vh;
 }
