@@ -10,7 +10,7 @@ section a::selection {
     color: rgb(200, 220, 255);
 }
 
-*::selection, br {
+*::selection {
     visibility: hidden;
 }
 
@@ -34,9 +34,26 @@ section article h3, section article p, section article ul{
     padding-top: 0.5rem;
 }
 
+article pre {
+    background:  rgb(40, 40, 40);
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vw;
+}
+
+article pre code {
+    color: rgb(190, 190, 190);
+    margin: 0;
+}
+
 /* Style for body */
 html, body {
-    background-color: rgb(40, 40, 42);
+    background-color: rgb(40, 40, 40);
     font-family: Tahoma, Verdana, sans-serif;
     font-size: 1em;
     margin: 0.25vw;
@@ -118,7 +135,7 @@ article {
     min-width: 48vw;
 }
 
-article p, article h1, article h2, article h3, article ul{
+article p, article h1, article h2, article h3, article ul, article code{
     margin-left: 1vw;
     margin-right: 1vw;
 }
