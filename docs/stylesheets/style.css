@@ -34,22 +34,23 @@ section article h3, section article p, section article ul{
     padding-top: 0.5rem;
 }
 
-article pre {
+article span {
     background:  rgb(40, 40, 40);
     border: 2px solid rgb(190, 190, 190);
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    display: inline-block;
+    color: rgb(190, 190, 190);
+    font-family: monospace;
+    overflow: auto;
+    max-width: 77vw;
+    min-width: 38.5vw;
 }
 
-article pre code {
-    color: rgb(190, 190, 190);
-    margin: 0;
-}
 
 /* Style for body */
 html, body {
@@ -135,7 +136,7 @@ article {
     min-width: 48vw;
 }
 
-article p, article h1, article h2, article h3, article ul, article code{
+article p, article h1, article h2, article h3, article ul{
     margin-left: 1vw;
     margin-right: 1vw;
 }
@@ -169,6 +170,12 @@ article iframe {
     height: 24vw;
 }
 
+article code {
+    font-size: 1rem;
+    background: rgb(220, 220, 220);
+    padding: 0.25rem;
+}
+
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
     section {
@@ -179,5 +186,9 @@ article iframe {
     article iframe {
         width: 85vw;
         height: 48vw;
+    }
+
+    article span {
+        min-width: 77vw;
     }
   }
