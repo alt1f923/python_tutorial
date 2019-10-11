@@ -1,15 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
 
-/* Hide selection */
-:not(a)::selection {
+/* Colour selection */
+section *::selection {
+    background: rgb(20, 20, 20);
+    color: rgb(235, 235, 235);
+}
+
+section a::selection {
+    color: rgb(200, 220, 255);
+}
+
+*::selection, br {
     visibility: hidden;
+}
+
+section article p, section article h3, section article h2, section article ul, article picture{
+    padding-top: 1rem;
+    background: rgb(235, 235, 235);
+    color: rgb(20, 20, 20);
+
+}
+
+section article p, section article h1, section article h2, section article h3{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+section article p, section article h2, section article ul{
+    padding-bottom: 1rem;
+}
+
+section article h3, section article p, section article ul{
+    padding-top: 0.5rem;
 }
 
 /* Style for body */
 html, body {
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(40, 40, 42);
     font-family: Tahoma, Verdana, sans-serif;
-    font-size: 1.75vh;
+    font-size: 1em;
     margin: 0.25vw;
     color: rgb(190, 190, 190);
     cursor: default;
@@ -18,11 +47,11 @@ html, body {
 /* Style for hyperlinked text */
 a {
     text-decoration: none;
-    color: rgb(200, 220, 255);
+    color: rgb(230, 130, 90);
 }
 
 a:hover {
-    color: rgb(230, 250, 255);
+    color: rgb(250, 180, 150);
     cursor: pointer;
 }
 
@@ -90,39 +119,36 @@ article {
 }
 
 article p, article h1, article h2, article h3, article ul{
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 article h1, article h2, article h3 {
     color: rgb(230, 230, 230);
-    padding-top: 1vh;
-    padding-bottom: 0.1vh;
+    padding-top: 1em;
+}
+
+article p,  article h3, article ul{
+    margin-top: 0;
     margin-bottom: 0;
 }
 
-article p {
-    margin-top: 0;
+article h2 {
+    margin-bottom: 0;
 }
 
 article ul {
-    padding-left: 2vw;
+    padding-left: 3rem;
 }
 
 article picture img{
-    max-width: 85vw;
-    padding: 2vh;
+    width: 100%;
 }
 
-article picture img {
-    width: auto;
-}
 
 article iframe {
-    width: 42.5vw;
-    height: 24vw;
-    margin-left: 2.25vw;
-    margin-right: 2.25vw;
+    width: 85vw;
+    height: 48vw;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
@@ -130,12 +156,5 @@ article iframe {
     section {
       -webkit-flex-direction: column;
       flex-direction: column;
-    }
-
-    article iframe {
-        width: 85vw;
-        height: 48vw;
-        margin-left: 3.75vw;
-        margin-right: 3.75vw;
     }
   }
