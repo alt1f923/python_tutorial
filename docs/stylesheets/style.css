@@ -33,14 +33,16 @@ header, footer {
 }
 
 header {
-    padding: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     color: rgb(250, 250, 250);
 }
 
 footer {
     font-size: 1.65vh;
     color: rgb(150, 150, 150);
-    padding: 0.5vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
 }
 
 /* Style for header h1 (main page title) */
