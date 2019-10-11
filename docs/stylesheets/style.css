@@ -93,7 +93,7 @@ article {
     min-width: 49vw;
 }
 
-article p, article h1, article h2, article h3, article ul, article iframe{
+article p, article h1, article h2, article h3, article ul{
     margin-left: 3vw;
     margin-right: 3vw;
 }
@@ -113,23 +113,20 @@ article ul {
     padding-left: 2vw;
 }
 
-article picture{
-    margin-left: 7vw;
-    margin-right: 7vw;
-}
-
-article picture img{
-    width: auto;
+article picture img, article iframe {
     max-width: 85vw;
     padding: 2vh;
+}
+
+article picture img {
+    width: auto;
 }
 
 article iframe {
-    max-width: 85vw;
-    max-height: 48vw;
-    min-width: 42.5vw;
-    min-height: 24vw;
-    padding: 2vh;
+    width: 42.5vw;
+    height: 24vw;
+    margin-left: 2.25vw;
+    margin-right: 2.25vw;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
@@ -137,5 +134,12 @@ article iframe {
     section {
       -webkit-flex-direction: column;
       flex-direction: column;
+    }
+
+    article iframe {
+        width: 85vw;
+        height: 48vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
     }
   }
