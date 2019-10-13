@@ -123,7 +123,7 @@ These are all covered in [PEP 257](https://www.python.org/dev/peps/pep-0257/#mul
 A multiline docstring using the example from [single line docstrings](../chapter%20one/README.md#Single-line-Docstrings) could look like this:
 ```python
 def function(x, y):
-  """Multiply the product of x + y by y and return the result.
+  """Multiply the product of x + y by y and return the result."""
   
   Args: 
     x: An integer.
