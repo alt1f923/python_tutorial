@@ -1,6 +1,7 @@
+/* Import OpenSans with weight of 800 for header */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
 
-/* Colour selection */
+/* Colour text selection */
 section *::selection {
     background: rgb(20, 20, 20);
     color: rgb(235, 235, 235);
@@ -14,52 +15,19 @@ section a::selection {
     visibility: hidden;
 }
 
-section article p, section article h3, section article h2, section article ul, article picture{
-    padding-top: 1rem;
-    background: rgb(235, 235, 235);
-    color: rgb(20, 20, 20);
-
+/* Style for homepage video background */
+video.home {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    opacity: 0.35;
 }
 
-section article p, section article h1, section article h2, section article h3{
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-section article p, section article h2, section article ul{
-    padding-bottom: 1rem;
-}
-
-section article h3, section article p, section article ul{
-    padding-top: 0.5rem;
-}
-
-article span {
-    background:  rgb(40, 40, 40);
-    border: 2px solid rgb(190, 190, 190);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-    display: inline-block;
-    color: rgb(190, 190, 190);
-    font-family: monospace;
-    overflow: auto;
-    max-width: 77vw;
-    min-width: 38.5vw;
-}
-
-
-/* Style for body */
-html, body {
-    background-color: rgb(40, 40, 40);
-    font-family: Tahoma, Verdana, sans-serif;
-    font-size: 1em;
-    margin: 0.25vw;
-    color: rgb(190, 190, 190);
-    cursor: default;
+section.home *{
+    z-index: 100;
 }
 
 /* Style for hyperlinked text */
@@ -73,6 +41,16 @@ a:hover {
     cursor: pointer;
 }
 
+/* Style for body */
+html, body {
+    background-color: rgb(40, 40, 40);
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 1vh;
+    margin: 0.25vw;
+    color: rgb(190, 190, 190);
+    cursor: default;
+}
+
 /* Style the header and footer */
 header, footer {
     text-align: center;
@@ -80,31 +58,31 @@ header, footer {
 }
 
 header {
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: rgb(250, 250, 250);
-}
-
-footer {
-    font-size: 1.65vh;
-    color: rgb(150, 150, 150);
-    padding-top: 2vh;
-    padding-bottom: 0.5vh;
 }
 
 /* Style for header h1 (main page title) */
 header h1 {
-    font-size: 9vh;
+    font-size: 10rem;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    line-height: 7vh;
-    padding-bottom: 1vh;
+    line-height: 9rem;
+    padding-bottom: 1rem;
 }
 
 /* Style for header h2 (page subtitle) */
 header h2 {
-    font-size: 4vh;
+    font-size: 4.5rem;
     margin-top: 0;
+}
+
+footer {
+    color: rgb(150, 150, 150);
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.25rem;
 }
 
 /* Style the unordered list in the footer */
@@ -116,64 +94,77 @@ footer ul {
 footer ul li{
     display: block;
     margin: 0;
-    font-size: 1.5vh;
 }
 
-
-/* Container for flexboxes */
+/* Style for section (Container for flexboxes) */
 section {
     display: -webkit-flex;
     display: flex;
     flex-grow: 1;
 }
 
-/* Style the content */
+/* Style for article (Website content) */
 article {
+    background: rgb(235, 235, 235);
+    font-size: 1.75rem;
+    color: rgb(20, 20, 20);
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
     min-height: 100%;
-    min-width: 48vw;
+    min-width: 46vw;
+    margin: 1.5rem;
 }
 
+/* Style for article content */
 article p, article h1, article h2, article h3, article ul{
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
-
-article h1, article h2, article h3 {
-    color: rgb(230, 230, 230);
-    padding-top: 1em;
-}
-
-article p,  article h3, article ul{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-article h2 {
-    margin-bottom: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 article ul {
-    padding-left: 3rem;
+    padding-left: 5rem;
+}
+
+
+/* Style for code blocks */
+article code, article span {
+    font-size: 1.8rem;
+}
+
+article code {
+    font-size: 1.8rem;
+    background: rgb(220, 220, 220);
+    padding: 0.25rem;
+}
+
+article span {
+    background:  rgb(40, 40, 40);
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin:auto;
+    display: block;
+    color: rgb(190, 190, 190);
+    font-family: monospace;
+    overflow: auto;
+    width: 95%;
+}
+
+/* Style for sizing and centering images and iframe content */
+article picture img, iframe {
+    display:block;
+    margin:auto;
 }
 
 article picture img{
-    width: 100%;
-    max-width: 661px;
+    width: 80%;
 }
-
 
 article iframe {
     width: 42.5vw;
     height: 24vw;
-}
-
-article code {
-    font-size: 1rem;
-    background: rgb(220, 220, 220);
-    padding: 0.25rem;
+    padding: 3rem;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
@@ -187,8 +178,18 @@ article code {
         width: 85vw;
         height: 48vw;
     }
-
-    article span {
-        min-width: 77vw;
-    }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

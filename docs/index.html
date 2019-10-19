@@ -10,90 +10,92 @@
         <title>Learn Python</title>
     </head>
     <body>
+        <!-- Header and nav (top of page) -->
         <header>
-            <h1><b>Learn Python</b></h1>
-            <h2><b>Getting started</b></h2>
+            <h1>Learn Python</h1>
+            <h2>Getting Started</h2>
         </header>
-        <section>
-            <article>
-                <h2>Installation</h2>
-                <p>Let's start your introduction to Python by making sure you have installed it correctly.</p>
-                <h3>Windows store</h3>
-                <p>If you're running Windows 10 you can install <a href="https://www.microsoft.com/store/productId/9NJ46SX7X90P">Python via the windows store</a>, which will automatically update your Python to the most current version. You don't have to do this, it's not what I've done personally, but it's worth checking out.</p>
-                <h3>Installer from python.org</h3>
-                <p>Make sure you have the latest version of the installer:</p>
-                <ul>
-                    <li><a href="https://www.python.org/downloads/windows/">Windows</a></li>
-                    <li><a href="https://www.python.org/downloads/mac-osx/">Mac OS X</a></li>
-                    <li><a href="https://www.python.org/downloads/source/">Linux</a></li>
-                </ul>
-                <h3>Python for phones</h3>
-                <p>I personally haven't programmed on my phone before, but I understand that some people don't have access to a computer or just want to code on their mobile device, and for them they can use apps like:</p>
-                <ul>
-                    <li><a href="https://www.microsoft.com/store/productId/9NBLGGH083NZ">Python 3 for Windows Phone</li>
-                    <li><a href="https://play.google.com/store/apps/details?id=org.qpython.qpy3">QPython3 for Android</a></li>
-                    <li><a href="https://apps.apple.com/us/app/python3ide/id1357215444">Python3IDE for iOS</a></li>
-                </ul>
-                <p>Please note that I don't program on my phone so these apps might not be the best out there.</p>
-                <p>I'm personally running version 3.7.3, but any version after 3.6 as far as I'm aware will work for what I'll be doing, but to be on the safe side, try to make sure you're on the latest version.</p>
-                <p>When you go to install it make sure you check the box that adds Python to PATH. It's on one of the first slides at the bottom of the installer and is usually unchecked by default.</p>
-                    <div style='text-align: center;'> <!-- Don't judge me. -->    
-                        <p><picture>
-                                <img src="images/path.png" alt='Image of Python installer with "Add Python 3.7 to PATH" circled'/>
-                        </picture></p>
-                    </div>
-                <p>This is important as it means you can run Python scripts, access the Python shell, and most importantly for later it'll mean you can use pip from the command prompt.</p>
-            </article>   
-            <article>
-                <h2>Other software to check out</h2>
-                <h3>Editors</h3>
-                <p>Now that you have Python installed and in your systems PATH environment variable (The windows store version does this, don't worry). We can begin. Feel free to use whatever editor you prefer, it doesn't really matter. If don't know which one to use for Python, here is a list of popular editors:</p>
-                <ul>
-                    <li><a href="https://www.jetbrains.com/pycharm/">Pycharm</a></li>
-                    <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-                    <li><a href="https://notepad-plus-plus.org/">Notepad++</a></li>
-                    <li><a href="https://wingware.com/">Wing IDLE</a></li>
-                    <li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
-                </ul>
-                <p>There's more than this out there, but these are all good. And it doesn't really matter, the default editor will work fine.</p>
-                <h3>Formatters and linters</h3>
-                <p>If you have other people working on your code with you, or if you end up taking an extended break from your code, having it be readable and easier to understand is a godsend.</p>
-                <p>You can check some formatters out here:</p>
-                <ul>
-                    <li><a href="https://github.com/Python/black">Black - The Uncompromising Code Formatter</a></li>
-                    <li><a href="https://www.pylint.org/">Pylint</a></li>
-                </ul>
-                <p>Programming is about expressing your creative thought into logic that can be understood by a computer, it's why I personally find it so fun. So don't worry if you're not using any of this. Try to remember that, it's supposed to be fun.</p>
-                <h2>The Python shell</h2>
-                <p>One of the advantages of Python being an interpreted language is that you can write code and get instant feedback. A way to do this is by using the Python shell, to open it you can open the default Python IDLE, or type "py" into cmd or powershell. (If this doesn't work try "Python" or "Python3", if you can't get it to work at all, make sure Python is in your PATH)</p>
-                <p>A good way to get an understanding of how the interpreter works is to use the shell, think of every line in your code as another line typed out into the shell. One by one.</p>
-                <p>For the first few topics, I will be using the Python in "interactive mode", which is just a fancy way to say that I'll be using the Python shell to demonstrate them.</p>
+        <nav>
 
-                <p>When you open the shell via the terminal, it should look something like this (I'm on windows).</p>
-                <p>
-                    <span>
-                        C:\Users\user> py<br><br>Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)] on win32<br>Type "help", "copyright", "credits" or "license" for more information.<br>>>>
-                    </span>
-                </p>
-                <p>Exiting the python shell (with <code>exit()</code>) you can run <code>py --version</code> to check your version of Python. (Even though it says it in the top line of the shell)</p>
-                <p>
-                    <span>C:\Users\user> py --version<br><br>Python 3.7.3</span>
-                </p>
-            </article>
-        </section>
+        </nav>
         <section>
-            <article>
-                <h2>What is Python</h2>
-                <p>Python may be different to languages that you have used before or will use in the future. Python is an interpreted high level language. What that means is, Python will talk to your computer and convert the code you've written into instructions that it can understand one line at a time.</p>
-                <p>That's what an interpreter does, a compiler on the other hand will convert the entire program to instructions that the computer can understand in one go. They both have their advantages, but generally compilers are faster than interpreters, but I wouldn't worry about that, Python is relevant and widely appreciated by programmers worldwide despite that.</p>
-                <p>Continuing the explanation, to be high level as a programming language, the language is far less complex and thus easier for humans to understand, sacrificing performance and control in return for an easier programming experience.</p>
-                <p>Because the logic behind programs is generally the same despite this, you still have to think the same way when programming in a lower level language like rust or c++ as you do when you program in Python, but an advantage of it is you can implement your creative ideas quickly and easily.</p>
-                <p>Here's a good video that explains the concept well, better than I ever could, even if it is a little dated:</p>
-                <div style='text-align: center;'> <!-- Stop judging me. -->
-                    <p><iframe src="https://www.youtube.com/embed/_C5AHaS1mOA"  frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-                </div>
-            </article>
-        </section>
+                <article>
+                    <h2>Installation</h2>
+                    <p>Let's start your introduction to Python by making sure you have installed it correctly.</p>
+                    <h3>Windows store</h3>
+                    <p>If you're running Windows 10 you can install <a href="https://www.microsoft.com/store/productId/9NJ46SX7X90P">Python via the windows store</a>, which will automatically update your Python to the most current version. You don't have to do this, it's not what I've done personally, but it's worth checking out.</p>
+                    <h3>Installer from python.org</h3>
+                    <p>Make sure you have the latest version of the installer:</p>
+                    <ul>
+                        <li><a href="https://www.python.org/downloads/windows/">Windows</a></li>
+                        <li><a href="https://www.python.org/downloads/mac-osx/">Mac OS X</a></li>
+                        <li><a href="https://www.python.org/downloads/source/">Linux</a></li>
+                    </ul>
+                    <h3>Python for phones</h3>
+                    <p>I personally haven't programmed on my phone before, but I understand that some people don't have access to a computer or just want to code on their mobile device, and for them they can use apps like:</p>
+                    <ul>
+                        <li><a href="https://www.microsoft.com/store/productId/9NBLGGH083NZ">Python 3 for Windows Phone</li>
+                        <li><a href="https://play.google.com/store/apps/details?id=org.qpython.qpy3">QPython3 for Android</a></li>
+                        <li><a href="https://apps.apple.com/us/app/python3ide/id1357215444">Python3IDE for iOS</a></li>
+                    </ul>
+                    <p>Please note that I don't program on my phone so these apps might not be the best out there.</p>
+                    <p>I'm personally running version 3.7.3, but any version after 3.6 as far as I'm aware will work for what I'll be doing, but to be on the safe side, try to make sure you're on the latest version.</p>
+                    <p>When you go to install it make sure you check the box that adds Python to PATH. It's on one of the first slides at the bottom of the installer and is usually unchecked by default.</p>
+                    <picture>
+                        <img src="images/path.png" alt='Image of Python installer with "Add Python 3.7 to PATH" circled'/>
+                    </picture>
+                    <p>This is important as it means you can run Python scripts, access the Python shell, and most importantly for later it'll mean you can use pip from the command prompt.</p>
+                </article>
+                <article>
+                        <h2>What is Python</h2>
+                        <p>Python may be different to languages that you have used before or will use in the future. Python is an interpreted high level language. What that means is, Python will talk to your computer by converting the code you've written into instructions that it can understand one instruction at a time.</p>
+                        <p>That's what an interpreter does, a compiler on the other hand will convert the entire program to instructions that the computer can understand in one go. They both have their advantages, but generally compilers are faster than interpreters, but I wouldn't worry about that, Python is relevant and widely appreciated by programmers worldwide despite that.</p>
+                        <p>Continuing the explanation, to be high level as a programming language, the language is far less complex and thus easier for humans to understand, sacrificing performance and control in return for an easier programming experience.</p>
+                        <p>Because the logic behind programs is generally the same despite this, you still have to think the same way when programming in a lower level language like rust or c++ as you do when you program in Python, but an advantage of it is you can implement your creative ideas quickly and easily.</p>
+                        <p>Here's a good video that explains the concept well, better than I ever could, even if it is a little dated:</p>
+                        <iframe src="https://www.youtube.com/embed/_C5AHaS1mOA"  frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>   
+            </section>
+            <section>
+                <article>
+                    <h2>The Python shell</h2>
+                    <p>One of the advantages of Python being an interpreted language is that you can write code and get instant feedback. A way to do this is by using the Python shell, to open it you can open the default Python IDLE, or type "py" into cmd or powershell. (If this doesn't work try "Python" or "Python3", if you can't get it to work at all, make sure Python is in your PATH)</p>
+                    <p>A good way to get an understanding of how the interpreter works is to use the shell, think of every line in your code as another line typed out into the shell. One by one.</p>
+                    <p>For the first few topics, I will be using the Python in "interactive mode", which is just a fancy way to say that I'll be using the Python shell to demonstrate them.</p>
+    
+                    <p>When you open the shell via the terminal, it should look something like this (I'm on windows).</p>
+                    <p>
+                        <span>
+                            C:\Users\user> py<br><br>Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)] on win32<br>Type "help", "copyright", "credits" or "license" for more information.<br>>>>
+                        </span>
+                    </p>
+                    <p>Exiting the python shell (with <code>exit()</code>) you can run <code>py --version</code> to check your version of Python. (Even though it says it in the top line of the shell)</p>
+                    <p>
+                        <span>C:\Users\user> py --version<br><br>Python 3.7.3</span>
+                    </p>
+                </article>
+                <article>
+                        <h2>Other software to check out</h2>
+                        <h3>Editors</h3>
+                        <p>Now that you have Python installed and in your systems PATH environment variable (The windows store version does this, don't worry). We can begin. Feel free to use whatever editor you prefer, it doesn't really matter. If don't know which one to use for Python, here is a list of popular editors:</p>
+                        <ul>
+                            <li><a href="https://www.jetbrains.com/pycharm/">Pycharm</a></li>
+                            <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+                            <li><a href="https://notepad-plus-plus.org/">Notepad++</a></li>
+                            <li><a href="https://wingware.com/">Wing IDLE</a></li>
+                            <li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+                        </ul>
+                        <p>There's more than this out there, but these are all good. And it doesn't really matter, the default editor will work fine.</p>
+                        <h3>Formatters and linters</h3>
+                        <p>If you have other people working on your code with you, or if you end up taking an extended break from your code, having it be readable and easier to understand is a godsend.</p>
+                        <p>You can check some formatters out here:</p>
+                        <ul>
+                            <li><a href="https://github.com/Python/black">Black - The Uncompromising Code Formatter</a></li>
+                            <li><a href="https://www.pylint.org/">Pylint</a></li>
+                        </ul>
+                        <p>Programming is about expressing your creative thought into logic that can be understood by a computer, it's why I personally find it so fun. So don't worry if you're not using any of this. Try to remember that, it's supposed to be fun.</p>
+                    </article>
+            </section>
         <footer>
             Duncan Fryer 2019
             <ul>
