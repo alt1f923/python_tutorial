@@ -28,24 +28,25 @@ section article nav ul {
     margin-top: 2rem;
 }
 
+section article nav h3 {
+    color: rgb(40, 40, 40);
+    font-size: 3.35rem;
+}
+
 section article nav ul li {
     display: list-item;
     list-style-type: none;
     text-align-last: left;
     padding: 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
-section article nav h3 {
-    color: rgb(40, 40, 40);
-    font-size: 5rem;
+section article nav ul li details ul {
+    padding-left: 2rem;
 }
-
-
 
 section article nav ul li details ul li {
-    font-size: 2.85rem;
-    padding-left: 2rem;
+    font-size: 2.25rem;
 }
 
 section article nav ul li details ul li details ul {
@@ -53,7 +54,7 @@ section article nav ul li details ul li details ul {
 }
 
 section article nav ul li details ul li details ul li{
-    font-size: 2.75rem;
+    font-size: 2rem;
 }
 
 section article nav ul li details ul li details ul, section article nav ul li details ul {
@@ -62,4 +63,24 @@ section article nav ul li details ul li details ul, section article nav ul li de
 
 header {
     margin-top: 15rem;
+}
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 1200px) {
+    section article nav h3 {
+        font-size: 5rem;
+    }
+
+    section article nav ul li {
+        font-size: 3rem;
+    }
+
+    section article nav ul li details ul li {
+        font-size: 2.75rem;
+    }
+
+    section article nav ul li details ul li details ul li{
+        font-size: 2.6rem;
+    }
 }
