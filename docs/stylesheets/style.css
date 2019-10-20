@@ -15,21 +15,6 @@ section a::selection {
     visibility: hidden;
 }
 
-/* Style for homepage video background */
-video.home {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 1;
-    opacity: 0.35;
-}
-
-section.home *{
-    z-index: 100;
-}
-
 /* Style for hyperlinked text */
 a {
     text-decoration: none;
@@ -39,6 +24,15 @@ a {
 a:hover {
     color: rgb(250, 180, 150);
     cursor: pointer;
+}
+
+a.disabled {
+    color: rgb(110, 95, 85);
+}
+
+a.disabled:hover {
+    color: rgb(110, 95, 85);
+    cursor:not-allowed
 }
 
 /* Style for body */
@@ -51,8 +45,8 @@ html, body {
     cursor: default;
 }
 
-/* Style the header and footer */
-header, footer {
+/* Style the header, footer and nav */
+header, footer, nav {
     text-align: center;
     flex-shrink: 0;
 }
@@ -78,22 +72,31 @@ header h2 {
     margin-top: 0;
 }
 
-footer {
+footer, nav {
+    list-style-type: none;
     color: rgb(150, 150, 150);
     padding-top: 1rem;
     padding-bottom: 1.25rem;
+}
+
+footer {
     font-size: 1.25rem;
 }
 
-/* Style the unordered list in the footer */
-footer ul {
+nav {
+    font-size: 2rem;
+}
+
+/* Style the unordered list in the footer and nav */
+footer ul, nav ul {
     margin: 0;
     padding: 0;
 }
 
-footer ul li{
-    display: block;
+footer ul li, nav ul li {
+    display: inline;
     margin: 0;
+    padding: 1rem;
 }
 
 /* Style for section (Container for flexboxes) */
@@ -168,7 +171,7 @@ article iframe {
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     section {
       -webkit-flex-direction: column;
       flex-direction: column;
